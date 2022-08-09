@@ -1,0 +1,10 @@
+<table>
+  <tbody>
+    <tr *ngFor="let row of table">
+      <td *ngFor="let cell of row" (click)="onSelect.emit(cell)">
+        {{cell.ref}}
+        <p>{{cell.value}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>

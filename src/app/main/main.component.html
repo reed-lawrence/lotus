@@ -1,0 +1,2 @@
+<app-cell-input *ngIf="table.length" [cell]="selected"></app-cell-input>
+<app-data-table [table]="table" (onSelect)="selected = $event"></app-data-table>
